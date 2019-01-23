@@ -1,0 +1,121 @@
+body {
+	margin: 0%;
+	background-color: #d7dae0;
+}
+input:focus {
+	outline: 0;
+}
+
+/*Header CSS*/
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: white;
+	display: flex;
+	width: 70%;
+	padding: 0% 15%;
+	height: 75px;
+	margin-right: 0%;
+	border-bottom: 1px solid gray;
+	margin-bottom: 200px;
+}
+h1 {
+	background-color: #59d6c1;
+	color: white;
+	margin: 0%;
+	display: inline;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 75px;
+	margin-right: 48%;
+	
+}
+.nav-links {
+	display: inline;
+	float: right;
+	margin: 25px 0;
+	text-decoration: none;
+	color: gray;
+	padding: 0 15px;
+	border-right: 1px solid gray;
+}
+.nav-links:hover {
+	color: black;
+}
+#contact {
+	border: none;
+}
+
+.header::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*End Header CSS*/
+
+
+/*Content CSS*/
+.content {
+	width: 70%;
+	height: 75%;
+	margin: 2% 15%;
+	background-color: white;
+	margin-top: 100px;
+}
+h2 {
+	color: #59d6c1;
+	padding: 3% 5%;
+	margin: 0%;
+	padding-bottom: 1%;
+}
+img {
+	display: inline;
+	float: left;
+	margin: 5%;
+	margin-top: 2%;
+	margin-right: 2%;
+	margin-bottom: 0%;
+	width: 200px;
+	height: auto;
+}
+.content hr {
+	border-top: 1px solid gray;
+	margin: 0% 5%;
+}
+.content p {
+xs
+	float: left;
+	margin: 2% 5%;
+}
+/*End Content CSS*/
+
+
+/*Footer CSS*/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #60656d;
+	color: white;
+	text-align: center;
+}
+.footer hr {
+	margin: 0%;
+	border: 3px solid #59d6c1;
+}
+.footer footer {
+	height: 50px;
+}
+.footer p {
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	font-size: 10px;
+}
+/*End Footer CSS*/
