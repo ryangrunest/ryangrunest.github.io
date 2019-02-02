@@ -1,10 +1,21 @@
-body {
+
+/*Main*/
+html, body {
 	margin: 0%;
-	background-color: #d7dae0;
+	background-color: #99C0AA;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	height: 100%;
+	margin-bottom: -75px;
 }
 input:focus {
 	outline: 0;
 }
+textarea:focus {
+	outline: 0;
+}
+/*End Main*/
+
 
 /*Header CSS*/
 .header {
@@ -12,42 +23,48 @@ input:focus {
 	top: 0;
 	left: 0;
 	z-index: 1;
-	background: white;
-	display: flex;
-	width: 70%;
-	padding: 0% 15%;
+	background: #173F40;
+	display: inline-flex;
+	width: 100%;
 	height: 75px;
-	margin-right: 0%;
-	border-bottom: 1px solid gray;
-	margin-bottom: 200px;
+	border-bottom: 1px solid #A7D6E3;
 }
-h1 {
-	background-color: #59d6c1;
-	color: white;
+.header h1 {
+	background-color: #A7D6E3;
+	color: #173F40;
 	margin: 0%;
-	display: inline;
-	width: 25%;
+	width: 220px;
 	height: 100%;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 30px;
+	font-weight: 300;
 	line-height: 75px;
-	margin-right: 48%;
+	letter-spacing: 0.5px;
+	margin-left: 15%;
 	
 }
+/*nav*/
+.mobile-nav {
+	display: none;
+}
+.nav-menu {
+	position: fixed;
+	top: 25px;
+	right: 0;
+	overflow: hidden;
+	padding-right: 14%;
+}
 .nav-links {
-	display: inline;
-	float: right;
-	margin: 25px 0;
-	text-decoration: none;
-	color: gray;
 	padding: 0 15px;
-	border-right: 1px solid gray;
+	text-decoration: none;
+	color: white;
+	border-left: 1px solid #99C0AA;
+}
+#first-nav{
+	border: none;
 }
 .nav-links:hover {
 	color: black;
-}
-#contact {
-	border: none;
 }
 
 .header::after {
@@ -55,30 +72,36 @@ h1 {
 	display: block;
 	clear: both;
 }
+/*End Nav*/
 /*End Header CSS*/
 
 
 /*Content CSS*/
 .content {
+	float: left;
 	width: 70%;
-	height: 75%;
-	margin: 2% 15%;
+	margin-left: 15%;
 	background-color: white;
 	margin-top: 100px;
+	box-shadow: 3px 2px 10px 1px rgba(25, 25, 25, 0.3);
+	min-height: 100%;
+	margin-bottom: 100px;
 }
 h2 {
-	color: #59d6c1;
+	color: #A7D6E3;
 	padding: 3% 5%;
 	margin: 0%;
 	padding-bottom: 1%;
+	font-weight: 300;
+	text-align: left;
 }
-img {
+.content img {
 	display: inline;
 	float: left;
 	margin: 5%;
 	margin-top: 2%;
 	margin-right: 2%;
-	margin-bottom: 0%;
+	margin-bottom: 0;
 	width: 200px;
 	height: auto;
 }
@@ -87,35 +110,273 @@ img {
 	margin: 0% 5%;
 }
 .content p {
-xs
-	float: left;
 	margin: 2% 5%;
+}
+
+.content:after {
+	content: "";
+	display: block;
+	height: 75px;
 }
 /*End Content CSS*/
 
 
+
+/*Portfolio*/
+.portfolio-content {
+	width: 70%;
+	height: 100%;
+	margin: 2% 15%;
+	background-color: white;
+	margin-bottom: 100px;
+	margin-top: 100px;
+	padding-bottom: 5%;
+	text-align: center;
+	box-shadow: 3px 2px 10px 1px rgba(25, 25, 25, 0.3);
+}
+
+.portfolio-content hr {
+	border-top: 1px solid gray;
+	margin: 0% 5%;
+	margin-bottom: 2%;
+
+}
+.image {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin: 1%;
+	padding-bottom: 0;
+	/*padding-top: 2%;*/
+}
+.image img {
+	width: 300px;
+	height: 300px;
+	object-fit: fill;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	box-shadow: 3px 2px 10px 1px rgba(25, 25, 25, 0.3);
+}
+#label {
+	position: absolute;
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #A7D6E3;
+	color: #173F40;
+	padding: 0;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+/*End Portfolio*/
+
+/*Form CSS*/
+form {
+	padding: 2% 5%;
+}
+#input {
+	width: 98%;
+	margin-bottom: 2%;
+	margin-top: 4px;
+	padding: 0.5% 1%;
+	border: 1px solid gray;
+}
+textarea {
+	width: 100%;
+	margin-bottom: 2%;
+	margin-top: 4px;
+	border: 1px solid gray;
+}
+#button {
+	text-decoration: none;
+	text-align: center;
+	line-height: 2rem;
+	border: 0px solid black;
+	color: white;
+	background-color: #173F40;
+	width: 5rem;
+	height: 2rem;
+	border-radius: 5px;
+}
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #A7D6E3;
+  border-radius: 5px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*End Form CSS*/
+
 /*Footer CSS*/
 .footer {
 	position: fixed;
+	height: 75px;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: #60656d;
+	background-color: #173F40;
 	color: white;
 	text-align: center;
 }
 .footer hr {
 	margin: 0%;
-	border: 3px solid #59d6c1;
+	border: 3px solid #A7D6E3;
 }
 .footer footer {
 	height: 50px;
 }
 .footer p {
 	margin: 0;
-	position: fixed;
+	line-height: 75px;
+	/*position: fixed;*/
 	bottom: 0;
-	left: 50%;
-	font-size: 10px;
+	text-align: center;
+	font-size: 20px;
 }
 /*End Footer CSS*/
+
+
+
+
+
+/*Media Queries*/
+@media only screen and (max-width: 1380px) {
+	.portfolio-content {
+		height: 1000px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.header {
+		width: 100%;
+		padding: 0;
+	}
+	.header h1 {
+		width: 150px;
+	}
+	.header #header {
+		float: left;
+		margin-left: 5%;
+		font-size: 20px;
+	}
+	.content {
+		margin-left: 5%;
+		width: 600px;
+		margin-bottom: 100px;
+	}
+	.portfolio-content {
+		margin: 13% 15%;
+		margin-left: 5%;
+		width: 600px;
+		height: 850px;
+	}
+	.portfolio-content img {
+		width: 250px;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 980px) {
+	.nav-menu {
+		padding-right: initial;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.portfolio-content {
+		margin-left: initial;
+		width: 70%;
+		height: 850px;
+		margin: 15% 15%;	
+	}
+	.content {
+		width: 90%;
+		margin-left: 5%;
+		margin-bottom: 100px;
+	}
+	.portfolio-content {
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+@media only screen and (max-width: 690px) {
+	.nav-menu {
+		display: none;
+	}
+	.mobile-nav {
+		width: 100%;
+		display: block;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 75px;
+		text-align: center;
+		background-color: white;
+	}
+	.mobile-links {
+		text-align: center;
+		position: relative;
+		bottom: 50%;
+		text-decoration: none;
+		color: black;
+		padding: 5px;
+	}
+	.mobile-links:hover {
+		color: #A7D6E3;
+	}
+	.header h1 {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	.header #header{
+		margin: 0;
+	}
+	.content {
+		margin-top: 50px;
+	}
+	.portfolio-content {
+		margin-top: 50px;
+	}
+}
+@media only screen and (max-width: 583px) {
+	.portfolio-content {
+		height: 1630px;
+		margin-bottom: 100px;
+	}
+}

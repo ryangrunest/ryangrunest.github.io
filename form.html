@@ -5,25 +5,37 @@
 	<meta charset="utf-8">
 	<title>Contact Me</title>
 
+	<!-- Link Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300" rel="stylesheet">
+
 	<!-- Link CSS -->
-	<link rel="stylesheet" type="text/css" href="Assets/form.css">
+	<link rel="stylesheet" type="text/css" href="Assets/index.css">
 </head>
 <body>
 	<!-- Visual Data Goes Here -->
 
 	<!-- Header -->
 	<div class="header">
-		<h1 id="header">Ryan Grunest</h1>
-		<a class="nav-links"href="index.html">About</a>
-		<a class="nav-links"href="portfolio.html">Portfolio</a>
-		<a class="nav-links" id="contact" href="form.html">Contact</a>
+		<h1 id="header">ryangrunest</h1>
+		<div class="nav-menu">
+			<a class="nav-links" id="first-nav" href="index.html">About</a>
+			<a class="nav-links" href="portfolio.html">Portfolio</a>
+			<a class="nav-links" href="form.html">Contact</a>
+		</div>
+	</div>
+	<div class="mobile-nav">
+			<div class="table">
+				<a class="mobile-links" id="first-nav" href="index.html">About</a>
+				<a class="mobile-links" href="portfolio.html">Portfolio</a>
+				<a class="mobile-links" href="form.html">Contact</a>
+			</div>
 	</div>
 
 
 
 	<!-- Contact Form -->
 	<div class="content">
-		<h2>Contact</h2>
+		<h2>contact</h2>
 		<hr>
 		<form>
 			Name<br>
@@ -33,7 +45,7 @@
 			Message<br>
 			<textarea rows="10" id="input"></textarea>
 			<br>
-			<input id="button" type="submit" name="submit">
+			<a id="button"href="#" class="button hvr-sweep-to-right">Submit</a>
 		</form>
 	</div>
 
