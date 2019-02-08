@@ -103,6 +103,9 @@ textarea {
     -o-background-size: cover;
     background-size: cover;
 }
+body {
+  background-color: #9ec4c5;
+}
 .jumbotron {
     background-color: rgba(0, 0, 0, 0.0);
     margin-top: 13%;
@@ -265,27 +268,59 @@ textarea {
 }
 
 /*Portfolio*/
- .p-card {
-    margin: 15px auto;
-    padding: 0;
-    border: 1px solid rgb(25, 25, 25, 0.1);
-    border-radius: 5px;
-    position: relative;
-    box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.4);
+#portfolio-body {
+    background: url("../img/background-blurred.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.p-card {
+  margin: 15px auto;
+  padding: 0;
+  border: 1px solid #3b444c;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.4);
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+}
+.p-card:hover {
+  cursor: pointer;
+  box-shadow: 5px 3px 15px 1px rgba(0, 0, 0, 0.7);
 }
 .p-card img {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+/*  border-radius: 25px;*/
 }
 .p-card h2 {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #59d6c1;
-    width: 100%;
-    padding: 10px;
-    margin: 10px auto;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #3b444c;
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+}
+.p-object {
+  border-radius: 25px;
+}
+.mail-link {
+  color: white;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+.mail-link:hover {
+  color: #3b444c;
+}
+#portfolio-brand {
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+#portfolio-brand:hover {
+  color: #3b444c !important;
 }
 /*End Portfolio*/
 
