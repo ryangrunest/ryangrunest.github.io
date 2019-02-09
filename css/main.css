@@ -103,9 +103,6 @@ textarea {
     -o-background-size: cover;
     background-size: cover;
 }
-body {
-  background-color: #9ec4c5;
-}
 .jumbotron {
     background-color: rgba(0, 0, 0, 0.0);
     margin-top: 13%;
@@ -327,8 +324,37 @@ body {
   color: #3b444c !important;
 }
 /*End Portfolio*/
-
-
+.left {
+  padding-left: 4%;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  width: 28%;
+  overflow-y: scroll;
+}
+.right {
+  padding-top: 1.5%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+  width: 72%;
+}
+#back-button {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+#back-button:hover {
+  background-color: #70A8B2;
+  color: white;
+  border: 1px solid #70A8B2;
+}
+#colored {
+  color: #70A8B2;
+}
 
 
 
