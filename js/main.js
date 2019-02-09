@@ -12,3 +12,6 @@ $("#word-guess-card").on("click", function() {
 $("#tic-tac-toe-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/Tic-Tac-Toe/");
 });
+$("#candy-card").on("click", function() {
+	window.open("https://ryangrunest.github.io/candy/");
+});
