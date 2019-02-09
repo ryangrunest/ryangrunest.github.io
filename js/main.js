@@ -15,3 +15,6 @@ $("#tic-tac-toe-card").on("click", function() {
 $("#candy-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/candy/");
 });
+$("#calculator-card").on("click", function() {
+	window.open("https://ryangrunest.github.io/Calculator/");
+})
