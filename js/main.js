@@ -17,4 +17,7 @@ $("#candy-card").on("click", function() {
 });
 $("#calculator-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/Calculator/");
-})
+});
+$("#portfolio-card").on("click", function() {
+	window.open("https://ryangrunest.github.io/index.html");
+});
