@@ -21,5 +21,4 @@ $("#calculator-card").on("click", function() {
 $("#star-wars-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/Star_Wars/");
 });
-$(#)
 // END PORTFOLIO
