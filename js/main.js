@@ -1,5 +1,5 @@
 
-
+// PORTFOLIO //
 // click listener for stickynotes portfolio
 $("#stickynote-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/sticky-notes/");
@@ -18,6 +18,8 @@ $("#candy-card").on("click", function() {
 $("#calculator-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/Calculator/");
 });
-$("#portfolio-card").on("click", function() {
-	window.open("https://ryangrunest.github.io/index.html");
+$("#star-wars-card").on("click", function() {
+	window.open("https://ryangrunest.github.io/Star_Wars/");
 });
+$(#)
+// END PORTFOLIO
