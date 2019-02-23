@@ -330,7 +330,6 @@ textarea {
   top: 0px;
   bottom: 0;
   left: 0;
-  width: 28%;
   overflow-y: scroll;
 }
 .right {
@@ -340,7 +339,6 @@ textarea {
   bottom: 0;
   right: 0;
   overflow-y: scroll;
-  width: 72%;
 }
 #back-button {
   background-color: white;

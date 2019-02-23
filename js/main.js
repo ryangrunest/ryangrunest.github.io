@@ -15,8 +15,8 @@ $("#tic-tac-toe-card").on("click", function() {
 $("#candy-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/candy/");
 });
-$("#calculator-card").on("click", function() {
-	window.open("https://ryangrunest.github.io/Calculator/");
+$("#trivia-card").on("click", function() {
+	window.open("https://ryangrunest.github.io/TriviaGame/");
 });
 $("#star-wars-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/Star_Wars/");
