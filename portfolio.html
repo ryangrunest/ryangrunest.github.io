@@ -22,16 +22,246 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
+
+
 <body id="portfolio-body">
 	<nav class="navbar navbar-light bg-transparent">
     <a id="portfolio-brand" class="navbar-brand text-light" href="index.html"><i class="far fa-arrow-alt-circle-left"></i> Home</a>
+    <a id="portfolio-brand" class="navbar-brand text-light" href="resume.html">Resumé <i class="far fa-arrow-alt-circle-right"></i></a>
   </nav>
 	<div class="container mt-0">
-		<div class="row text-center">
-			<!-- Main Content -->
-      <div class="jumbotron mt-0 pt-0 bg-transparent">
-      	<h3 class="text-center mb-3 text-">Some of my recent projects. Want to see more? <a class="mail-link" href="mailto: ryangrunest45@gmail.com">email me!</a></h3>
+
+    <!-- header -->
+    <div class="container text-center">
+        	<h1 class="text-center mb-5 text-">
+            Some of my recent projects. Want to see more? <a class="mail-link" href="mailto: ryangrunest45@gmail.com">email me!</a>
+          </h1>
+    </div>
+
+    <!-- Word Guess Card -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Word Guess Text -->
+        <div class="col-12 col-lg-6 text-white portfolio-text">
+          <p class="card-text">
+            <span class="portfolio-card-header">Word Guess </span>
+            is a game I made using only vanilla Javascript and Bootstrap. The user has to guess which word is being randomly picked from an array of words taken from David Bowie's 'Space Oddity'. <br> The user enters the guesses by typing on the keyboard. You can only guess incorrectly 10 times, otherwise you lose the game! There are counters that let you play again while keeping track of how many times you've won, as well as an option to reset the game entirely.
+        </p>
         <div class="row">
+            <div class="col">
+              <h4>Frameworks Used</h4>
+              <ul class="portfolio-lists">
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Languages Used</h4>
+              <ul class="portfolio-lists">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+        <!-- Word Guess Image -->
+        <img class="p-card col-12 col-lg-6"src="img/img2.jpg" id="word-guess-card"/> 
+      </div>        
+    </div>
+
+    <!-- Sticky Notes -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Sticky Notes Image -->
+        <img class="p-card col-12 col-lg-6"src="img/img1.jpg" id="stickynote-card"/> 
+        <!-- Sticky Notes Text -->
+        <div class="col-12 col-lg-6 text-white portfolio-text">
+          <p class="card-text">
+            <span class="portfolio-card-header">StickyNotes </span>
+            is an app that lets you create and edit sticky notes on the web! Because it stores the user's changes locally, you can close your browser window, and when you come back to it, your changes will still be there. 
+          </p>
+            <div class="row">
+            <div class="col">
+              <h4>Frameworks Used</h4>
+              <ul class="portfolio-lists">
+                <li>JQuery</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Languages Used</h4>
+              <ul class="portfolio-lists">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+        </div>
+      </div>        
+    </div>
+
+    <!-- Gif Search -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- giffy Text -->
+        <div class="col-12 col-lg-6 text-white portfolio-text">
+          <p class="card-text">
+            <span class="portfolio-card-header">Giffy </span>
+            is a web app that lets you search for your favorite gif's via Giffy's API. You can create new search terms, and it gives you information such as a link to the original URL, and the date the gif was first created.
+          </p>
+          <div class="row">
+            <div class="col">
+              <h4>Frameworks Used</h4>
+              <ul class="portfolio-lists">
+                <li>Giffy API</li>
+                <li>JQuery</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Languages Used</h4>
+              <ul class="portfolio-lists">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+        <!-- giffy Image -->
+        <img class="p-card col-12 col-lg-6"src="img/img7.jpg" id="giffy-card"/> 
+      </div>        
+    </div>
+
+    <!-- Tic-Tac-Toe Card -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Tic-Tac-Toe Image -->
+        <img class="p-card col-12 col-lg-6"src="img/img3.jpg" id="tic-tac-toe-card"/> 
+        <!-- Tic-Tac-Toe Text -->
+        <div class="col-12 col-lg-6 text-white portfolio-text">
+          <p class="card-text">
+            <span class="portfolio-card-header">Tic-Tac-Toe </span>
+            is a remake of the classic tic - tac - toe game, made with vanilla Javascript and Bootstrap. It's a two person game, the first player to get 3 in a row wins!
+          </p>
+          <div class="row">
+            <div class="col">
+              <h4>Frameworks Used</h4>
+              <ul class="portfolio-lists">
+                <li>None!</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Languages Used</h4>
+              <ul class="portfolio-lists">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+        </div>
+      </div>        
+    </div>
+
+    <!-- Candy Card -->
+    <div class="container mt-5">
+      <div class="row"> 
+        <!-- Candy Text -->
+        <div class="col-12 col-lg-6 text-white portfolio-text">
+          <p class="card-text">
+            <span class="portfolio-card-header">Candy </span>
+            is a project I made for one of my web development classes. We had to create a CSS and Bootstrap layout for a Museum of Candy landing page. 
+          </p>
+          <div class="row">
+            <div class="col">
+              <h4>Frameworks Used</h4>
+              <ul class="portfolio-lists">
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Languages Used</h4>
+              <ul class="portfolio-lists">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+        <!-- Candy Image -->
+        <img class="p-card col-12 col-lg-6"src="img/img4.jpg" id="candy-card"/>
+      </div>        
+    </div>
+
+    <!-- Trivia Card -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Trivia Image -->
+        <img class="p-card col-12 col-lg-6"src="img/img5.jpg" id="trivia-card"/> 
+        <!-- Trivia Text -->
+        <div class="col-12 col-lg-6 text-white portfolio-text">
+          <p class="card-text">
+            <span class="portfolio-card-header">Steve Job's Trivia </span>
+            is a web based trivia game that tests your knowledge on Steve Jobs trivia! After reading his biography, I was shocked to find out things such as his appreciation for LSD, his relationship with Wozniak, and that he was adopted at a young age! Because of this, I decided to make a trivia game about him, and used JQuery to inject html elements to the DOM so the user doesn't have to constantly load new web pages. 
+          </p>
+          <div class="row">
+            <div class="col">
+              <h4>Frameworks Used</h4>
+              <ul class="portfolio-lists">
+                <li>JQuery</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Languages Used</h4>
+              <ul class="portfolio-lists">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+        </div>
+      </div>        
+    </div>
+
+    <!-- Star Wars Card -->
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <!-- Star Wars Text -->
+        <div class="col-12 col-lg-6 text-white portfolio-text">
+          <p class="card-text">
+            <span class="portfolio-card-header">Star Wars RPG </span>
+            is a card - based role playing game using characters from George Lucas' Star Wars saga. At the beginning, the user picks a character, and you can only win if you defeat all of your opponents.  
+          </p>
+          <div class="row">
+            <div class="col">
+              <h4>Frameworks Used</h4>
+              <ul class="portfolio-lists">
+                <li>JQuery</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Languages Used</h4>
+              <ul class="portfolio-lists">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Star Wars Image -->
+        <img class="p-card col-12 col-lg-6"src="img/img6.jpg" id="star-wars-card-card"/> 
+      </div>        
+    </div>
+
+    
+
+
+
+<!-- 
             <div id="stickynote-card" class="p-object col-xs-12 col-sm-6 col-md-4">
             <article class="p-card img-fluid">
                 <img src="img/img1.jpg">
@@ -76,7 +306,7 @@
             </article>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- End Main Content -->
 

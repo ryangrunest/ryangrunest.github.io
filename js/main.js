@@ -21,4 +21,7 @@ $("#trivia-card").on("click", function() {
 $("#star-wars-card").on("click", function() {
 	window.open("https://ryangrunest.github.io/Star_Wars/");
 });
+$('#giffy-card').on('click', function() {
+	window.open('https://ryangrunest.github.io/Giffy/');
+});
 // END PORTFOLIO

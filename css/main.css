@@ -130,7 +130,48 @@ textarea {
     animation-timing-function: ease-in;
     animation-duration: 5.0s;
 }
-@keyframes buttonFadeInOpacity {
+.btn-light {
+    appearance: button;
+    background-color: rgba(248, 249, 250, 0.0);
+    color: white;
+}
+
+.typewriter p {
+  width: 50%;
+  display: inline-block;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  /*animation: 
+      typing 3.5s steps(90, end),
+      blink-caret .75s step-end infinite;*/
+}
+
+
+
+/*media queries for keyframes onlanding page*/
+@media (min-width: 1200px) {
+  .typewriter p {
+    border-right: 1px solid white; /* The typwriter cursor */
+    width: 92%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    animation: 
+      typing 3.5s steps(90, end),
+      blink-caret .75s step-end infinite;
+      white-space: nowrap; /* Keeps the content on a single line */
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+      from { width: 0% }
+      to { width: 90% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white; }
+  }
+  @keyframes buttonFadeInOpacity {
     0% {
         opacity: 0;
     }
@@ -141,34 +182,6 @@ textarea {
         opacity: 1;
     }
 }
-.btn-light {
-    appearance: button;
-    background-color: rgba(248, 249, 250, 0.0);
-    color: white;
-}
-
-.typewriter p {
-  display: inline-block;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 1px solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
-  animation: 
-      typing 3.5s steps(90, end),
-      blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0% }
-    to { width: 80% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
 }
 
 
@@ -264,6 +277,8 @@ textarea {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
+
+
 /*Portfolio*/
 #portfolio-body {
     background: url("../img/background-blurred.jpg") no-repeat center center fixed;
@@ -272,14 +287,14 @@ textarea {
     -o-background-size: cover;
     background-size: cover;
 }
-.jumbotron h3 {
-  font-weight: 200;
-}
 .p-card {
-  margin: 15px auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
   padding: 0;
-  border: 1px solid #3b444c;
-  border-radius: 5px;
+  border: 4px solid white;
+  border-radius: 25px;
   position: relative;
   box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.4);
   transition-property: box-shadow;
@@ -289,24 +304,25 @@ textarea {
   cursor: pointer;
   box-shadow: 5px 3px 15px 1px rgba(0, 0, 0, 0.7);
 }
-.p-card img {
-  width: 100%;
-  margin: 0 auto;
-/*  border-radius: 25px;*/
+.portfolio-card-header {
+  font-weight: 900;
+  font-size: 2rem;
 }
-.p-card h2 {
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #3b444c;
-  width: 100%;
-  padding: 10px;
-  margin: 10px auto;
-  font-weight: 150;
-}
-.p-object {
+.portfolio-text {
+  padding: 25px;
+  padding-top: 0;
+  font-size: 20px;
   border-radius: 25px;
+  height: 100%;
+}
+.portfolio-lists {
+  padding: 0;
+  padding-left: 20px;
+  margin: 0;
+}
+.card-text {
+  font-style: italic;
+  font-weight: 200;
 }
 .mail-link {
   color: white;
@@ -319,11 +335,14 @@ textarea {
 #portfolio-brand {
   transition-property: color;
   transition-duration: 0.3s;
+  margin: 0;
 }
 #portfolio-brand:hover {
   color: #3b444c !important;
 }
 /*End Portfolio*/
+
+
 .left {
   padding-left: 4%;
   position: absolute;
@@ -353,7 +372,13 @@ textarea {
 #colored {
   color: #70A8B2;
 }
-
+.link-button-div {
+  margin-top: 30%;
+}
+.link-buttons {
+  margin-top: 200px;
+  padding: 0;
+}
 
 
 
