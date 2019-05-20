@@ -24,4 +24,7 @@ $("#star-wars-card").on("click", function() {
 $('#giffy-card').on('click', function() {
 	window.open('https://ryangrunest.github.io/Giffy/');
 });
+$('#driv-card').on('click', () => {
+	window.open('https://donor-referral-info-viewer.herokuapp.com/login');
+});
 // END PORTFOLIO
